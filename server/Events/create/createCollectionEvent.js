@@ -10,6 +10,7 @@ eventEmitter.on("Create Collection", async function (DBName, CollectionName,Coll
                 operations.mkdir("../Database/" + DBName + "/" + CollectionName);
                 operations.Write("../Database/" + DBName + "/" + CollectionName,CollectionStruct,"struct.json")
                 operations.Write("../Database/" + DBName + "/" + CollectionName,'[]',"index.json")
+                console.log("Collection "+CollectionName+" in " + DBName+ " created");
             } else {
                 console.log("Collection already exist");
             }

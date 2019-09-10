@@ -13,6 +13,7 @@ eventEmitter.on('Create Database', async function (DBName) {
             console.log("DATABASE ALREADY EXISTS");
         } else {
             operations.mkdir("../Database/" + DBName)
+            console.log("Database "+DBName+" Created");
         }
     }
     await DatabaseDir();

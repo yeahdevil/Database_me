@@ -145,28 +145,29 @@ var data3 = [{
 
 
 async function db() {
-    // await DBevents.createDatabaseEvt.emit("Create Database", "abc");
-    // await DBevents.createCollectionEvt.emit("Create Collection", "abc", "xyz", JSON.stringify({
-    //     "name": "String"
-    // }));
+    await DBevents.createDatabaseEvt.emit("Create Database", "abc");
+    await DBevents.createCollectionEvt.emit("Create Collection", "abc", "xyz", JSON.stringify({
+        "name": "String"
+    }));
 
 
-    //  await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data3)
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
-
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
-
-    // await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
-    //await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data3)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data1)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
+    await DBevents.createRecordEvt.emit("Create Record", "abc", "xyz", data)
 
 
-    //await DBevents.readRecordEvt.emit("Read Record", "abc", "xyz");
-    // await DBevents.removeCollectionEvt.emit("Remove Collection","abc","xyz");
-    // await DBevents.removeDatabaseEvt.emit("Remove Database","abc");\
-    //await DBevents.updateRecordEvt.emit("Update Record","abc","xyz","first_name","Jeanette","Deepak");
+    await DBevents.readRecordEvt.emit("Read Record", "abc", "xyz");
+
+    await DBevents.updateRecordEvt.emit("Update Record","abc","xyz","first_name","Jeanette","Deepak");
+
+    await DBevents.removeRecordEvt.emit("Remove Record","abc","xyz","id",2);
+    await DBevents.removeCollectionEvt.emit("Remove Collection","abc","xyz");
+    await DBevents.removeDatabaseEvt.emit("Remove Database","abc");
 }
 db()
 
