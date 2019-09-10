@@ -1,0 +1,40 @@
+.head{
+margin: 2rem;
+padding: 1rem;
+background-color: black;
+color: whitesmoke;
+text-align: center;
+border-radius: 10px;
+}
+.main{
+    background-color: cadetblue;
+    padding: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+.output{
+height: 20rem;
+width: 100%;
+resize: vertical;
+border-radius: 10px;
+}
+.input{
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 0;
+   
+}
+.input:hover{
+    border:1px solid red; 
+}
+.btn{
+    padding: 0.5rem;
+    background-color: burlywood;
+    width: 5rem;
+    border-radius: 5px;
+    border: 0;
+}
+.btn:active{
+    border:2px solid red;
+}
